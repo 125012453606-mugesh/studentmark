@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Marks Details</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Marks Details</h1>
+
+        <div class="student-details">
+            <label>Student Name:</label>
+            <input type="text" id="studentName" placeholder="Enter student name">
+
+            <label>Register Number:</label>
+            <input type="text" id="registerNo" placeholder="Enter register number">
+        </div>
+
+        <h2>Enter Marks</h2>
+
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+
+            <tr>
+                <td>Tamil</td>
+                <td>
+                    <input type="number" id="tamil" min="0" max="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>English</td>
+                <td>
+                    <input type="number" id="english" min="0" max="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mathematics</td>
+                <td>
+                    <input type="number" id="maths" min="0" max="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Science</td>
+                <td>
+                    <input type="number" id="science" min="0" max="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Social Science</td>
+                <td>
+                    <input type="number" id="social" min="0" max="100">
+                </td>
+            </tr>
+        </table>
+
+        <button onclick="calculateMarks()">Calculate Result</button>
+
+        <div class="result" id="result">
+
+            <h2>Student Result</h2>
+
+            <p>
+                <strong>Name:</strong>
+                <span id="resultName"></span>
+            </p>
+
+            <p>
+                <strong>Register Number:</strong>
+                <span id="resultRegister"></span>
+            </p>
+
+            <p>
+                <strong>Total Marks:</strong>
+                <span id="totalMarks"></span> / 500
+            </p>
+
+            <p>
+                <strong>Average:</strong>
+                <span id="average"></span>
+            </p>
+
+            <p>
+                <strong>Percentage:</strong>
+                <span id="percentage"></span>%
+            </p>
+
+            <p>
+                <strong>Grade:</strong>
+                <span id="grade"></span>
+            </p>
+
+            <p>
+                <strong>Result:</strong>
+                <span id="status"></span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Link JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
